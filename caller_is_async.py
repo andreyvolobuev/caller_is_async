@@ -15,4 +15,4 @@ def caller_is_async(self, depth: int = 2) -> bool:
         method_name = caller.f_code.co_name
         method = getattr(cls, method_name)
         return inspect.iscoroutinefunction(method)
-
+    return False
